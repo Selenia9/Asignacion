@@ -60,12 +60,11 @@ body {
 }
 
 .contenido {
-    width: 85%;
+    width: 100%;
 }
 
 .container {
     padding: 1em;
-    margin-bottom: 530px;
 }
 
 .contenidolateral {
@@ -112,38 +111,78 @@ body {
     width: 60px;
 }
 
-.navbar {
-    background: antiquewhite;
+#headerdiv {
+    margin: auto;
+    width: 100%;
+    background: rgb(0, 26, 255);
     overflow: hidden;
 }
 
-.navbar img {
-    width: 200px;
+ul,
+li {
+    list-style: none;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: darkblue;
-    text-align: center;
-    padding: 14px 16px;
+.navbar {
+    padding: 2em;
+    background: yellow;
+    width: 100%;
+    display: inline-block;
+}
+
+.navbar li a {
+    font-size: 20px;
+    background: grey;
+    color: white;
     text-decoration: none;
-    font-size: 17px;
+    padding: 10px 15px;
+    display: block;
 }
 
-.navbar a:hover {
-    font-style: italic;
-    font-size: 30px;
-    background: green;
+.navbar li a:hover {
+    background-color: violet;
 }
 
-.navbar .icon {
+.navbar>li {
+    float: left;
+}
+
+.navbar li ul {
     display: none;
-    float: right;
+    position: absolute;
+    min-width: 140px;
+}
+
+.navbar li:hover>ul {
+    display: block;
+}
+
+.navbar li ul li {
+    position: relative;
+}
+
+.navbar li ul li ul {
+    right: -140px;
+    top: 0px;
 }
 
 
 /*RESPONSIVE*/
+
+@media screen and (min-width:1024px) {
+    #headerdiv img {
+        width: 250px;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbar img {
+        width: 200px;
+    }
+}
+
+
+/*GRANDE*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .encabezado {
@@ -155,14 +194,32 @@ body {
     .contenidolateral {
         width: 20%;
     }
+    #headerdiv img {
+        width: 250px;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
+
+
+/*MEDIANO*/
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .encabezado {
         background: yellow;
     }
+    #headerdiv img {
+        width: 50px;
+    }
     .contenido {
         background-color: darkblue;
+    }
+    #headerdiv img {
+        width: 250px;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .contenido,
     .contenidolateral {
@@ -170,9 +227,12 @@ body {
     }
 }
 
+
+/*PEQUEÑO*/
+
 @media screen and (max-width:480px) {
     .encabezado {
-        background: violet;
+        background: darkblue;
         height: 80px;
     }
     .encabezado .left-arrow {
@@ -192,14 +252,27 @@ body {
     .navbar {
         background: yellow;
     }
+    #headerdiv img {
+        width: 200px;
+        float: left;
+    }
+    .navbar a {
+        font-size: 11px;
+    }
     .contenido {
         background-color: darkorchid;
-    }
-    .contenidolateral {
-        background: blue;
     }
     .contenido,
     .contenidolateral {
         width: 100%;
+    }
+    .piepagina {
+        height: 150px;
+    }
+    .piepagina img {
+        width: 25px;
+    }
+    .piepagina h3 {
+        font-size: 15px;
     }
 }
