@@ -39,10 +39,6 @@ body {
     width: 30px;
 }
 
-#carrusel {
-    background: yellow;
-}
-
 .encabezado .left-arrow {
     position: absolute;
     left: 10px;
@@ -65,24 +61,6 @@ body {
 
 .container {
     padding: 1em;
-}
-
-.contenidolateral {
-    width: 15%;
-    background: violet;
-    height: 530px;
-    padding: 1em;
-}
-
-.contenidolateral a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.contenidolateral a:hover {
-    font-size: 30px;
-    font-style: italic;
-    background: orange;
 }
 
 .post {
@@ -123,22 +101,6 @@ li {
     list-style: none;
 }
 
-.navbar {
-    padding: 2em;
-    background: yellow;
-    width: 100%;
-    display: inline-block;
-}
-
-.navbar li a {
-    font-size: 20px;
-    background: grey;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
 .navbar li a:hover {
     background-color: violet;
 }
@@ -150,7 +112,7 @@ li {
 .navbar li ul {
     display: none;
     position: absolute;
-    min-width: 140px;
+    min-width: 100px;
 }
 
 .navbar li:hover>ul {
@@ -179,6 +141,23 @@ li {
     .navbar img {
         width: 200px;
     }
+    .navbar {
+        padding: 2em;
+        background: yellow;
+        width: 100%;
+        display: inline-block;
+    }
+    .navbar li a {
+        font-size: 20px;
+        background: grey;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    .navbar>li {
+        margin: 5px;
+    }
 }
 
 
@@ -189,16 +168,30 @@ li {
         background: brown;
     }
     .contenido {
-        width: 80%;
-    }
-    .contenidolateral {
-        width: 20%;
+        width: 100%;
     }
     #headerdiv img {
         width: 250px;
         float: left;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .navbar {
+        padding: 2em;
+        background: yellow;
+        width: 100%;
+        display: inline-block;
+    }
+    .navbar li a {
+        font-size: 20px;
+        background: grey;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+    }
+    .navbar>li {
+        margin: 5px;
     }
 }
 
@@ -208,9 +201,6 @@ li {
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .encabezado {
         background: yellow;
-    }
-    #headerdiv img {
-        width: 50px;
     }
     .contenido {
         background-color: darkblue;
@@ -224,6 +214,20 @@ li {
     .contenido,
     .contenidolateral {
         width: 100%;
+    }
+    .navbar {
+        padding: 2em;
+        background: yellow;
+        width: 100%;
+        display: inline-block;
+    }
+    .navbar li a {
+        font-size: 20px;
+        background: grey;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
     }
 }
 
@@ -249,15 +253,27 @@ li {
         top: 10%;
         margin-top: -9px;
     }
-    .navbar {
-        background: yellow;
-    }
     #headerdiv img {
         width: 200px;
         float: left;
+        margin-right: 2px;
     }
-    .navbar a {
-        font-size: 11px;
+    .navbar {
+        padding: 2em;
+        background: yellow;
+        width: 100%;
+        display: inline-block;
+    }
+    .navbar li a {
+        font-size: 20px;
+        background: grey;
+        color: white;
+        text-decoration: none;
+        padding: 1px 13px;
+        display: block;
+    }
+    .navbar>li {
+        margin: 5px;
     }
     .contenido {
         background-color: darkorchid;
