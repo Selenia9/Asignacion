@@ -3,6 +3,22 @@ body {
     /*No existira margen que nos otorga el navegador*/
 }
 
+#number {
+    font-size: 25px;
+    color: black;
+    width: 100%;
+    background: antiquewhite;
+}
+
+#carrusel {
+    background: yellow;
+    width: 100%;
+}
+
+#carrusel img {
+    width: 100px;
+}
+
 .encabezado,
 .contenido,
 .piepagina {
